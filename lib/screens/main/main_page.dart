@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:luen_widget_book/screens/text/text_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -11,6 +12,13 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +27,7 @@ class _MainPageState extends State<MainPage> {
       ),
       body: ListView(
         children: [
-          item(title: 'Text', onTap: ()=>Get.toNamed('')),
+          item(title: 'Text', onTap: ()=>Get.toNamed(TextPage.route)),
         ],
       ),
     );

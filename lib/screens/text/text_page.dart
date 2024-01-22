@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 class TextPage extends StatelessWidget {
   TextPage({super.key});
 
+  static const route = '/text';
+
   final TextPageController controller = Get.put(TextPageController());
 
   @override
@@ -13,7 +15,7 @@ class TextPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Text'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('text widget'),
       ),
     );

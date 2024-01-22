@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:luen_widget_book/screens/main/main_page.dart';
 import 'package:get/get.dart';
+import 'package:luen_widget_book/screens/text/text_page.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() {
@@ -19,7 +20,6 @@ class MyApp extends StatelessWidget {
       title: '루엔 위젯 북',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Pretendard',
         scaffoldBackgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
         useMaterial3: true,
@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       initialRoute: MainPage.route,
       getPages: [
         GetPage(name: MainPage.route, page: () => const MainPage()),
+        GetPage(name: TextPage.route, page: ()=> TextPage()),
       ],
     );
   }
